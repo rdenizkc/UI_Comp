@@ -1,0 +1,30 @@
+<template>
+
+  <div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_shade"> 
+      Welcome to LWC Training <br/>
+      <input type="text" id="text-input-id-47" placeholder="Placeholder text…" required="" class="slds-input" onchange={valChange}/> <br/>
+      
+
+      <button class="slds-button slds-button_brand" onclick={callREST}> Submit </button>
+  </div>
+
+
+
+
+  <div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_shade">
+      {name} <br/>
+      {age} <br/>
+      {city} <br/>
+      {country} <br/>
+  </div>
+
+  <div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_shade">
+      API Callout
+
+      {id} <br/>
+      {setup} <br/>
+      {puchline} <br/>
+      {type} <br/>
+  </div>
+
+</template>
