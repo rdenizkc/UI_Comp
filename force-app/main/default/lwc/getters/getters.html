@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Getters" icon-name="utility:transport_walking">
+        <div class="slds-m-around_medium">
+            <b><u>Calculation without Getters</u></b><br>
+            The sum of <b>{num1}</b> and <b>{num2}</b> is {num1}+{num2}. - So, this shows that HTML Does not do calculations.<br>
+            <b><u>Calculation with Getters</u></b><br>
+            The sum of <b>{num1}</b> and <b>{num2}</b> is <b>{sum}</b>.<br>
+            The first person in the list is <b>{firstPerson}</b>.
+            <hr>
+              <lightning-input
+                label="Please enter your number 1"
+                type="number"
+                placeholder="enter here..."
+                onchange={changeHandlerNum1}
+                value="">
+            </lightning-input>
+            <lightning-input
+                label="Please enter your number 2"
+                class="slds-m-top_small"
+                type="number"
+                placeholder="enter here..."
+                onchange={changeHandlerNum2}
+                value="">
+            </lightning-input>
+            <div>
+                The product of <b>{number1}</b> and <b>{number2}</b> is <b>{product}</b>.
+            </div>
+        
+        </div>
+    </lightning-card>
+</template>

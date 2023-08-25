@@ -7,19 +7,30 @@ export default class TechProEdComp extends LightningElement {
     city ="London"; 
     country = "UK"; 
 
-    id; 
-    setup; 
-    puchline; 
-    type; 
-
+ 
 
     valChange(event){
         console.log('valChange method invoked');
         console.log(event); 
         console.log(event.target.value); 
         this.name = event.target.value; 
+        
     }
+    valChange1(event){
+        console.log('valChange1 method invoked');
+        console.log(event);
+        console.log(event.target.value);
+        this.age = event.target.value;
+    }
+valChange2(event){
+    this.city= event.target.value;
+}
 
+valChange3(event){
+this.country=event.target.value;
+
+
+}
     callREST(){
         console.log('callREST method invokded'); 
         fetch("https://official-joke-api.appspot.com/random_joke", {method:"GET"} ) 

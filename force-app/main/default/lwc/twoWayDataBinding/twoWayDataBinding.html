@@ -1,0 +1,36 @@
+<template>
+    <lightning-card  title="Two Way Data Binding" icon-name="action:canvas">
+  <div class="slds-m-around_medium">
+
+    <lightning-input
+         type="text"
+         label="Enter your Name"
+         value=""
+         placeholder="Enter text here"
+         minlength="2"
+         maxlength="20"
+         onkeyup={handleChangeName}
+         required>
+    </lightning-input>
+
+    <lightning-input
+    class="slds-m-top_small"
+        type="text"
+        label="Enter your Title"
+        value=""
+        placeholder="Enter text here"
+        minlength="2"
+        maxlength="20"
+        onchange={handleChangeTitle}
+        required>
+    </lightning-input>
+
+    <div class="slds-m-top_small">
+        Hello, i am <b>{fullName}</b> and I am working as <b>{title}</b> ;
+    </div>
+
+
+  </div>
+        
+   </lightning-card>
+   </template>

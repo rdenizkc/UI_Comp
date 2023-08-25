@@ -1,3 +1,13 @@
 <template>
-    
+  
+    <div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_shade"> 
+     Palindrome
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter text" onchange={text}></lightning-input> <br>
+            <lightning-button variant="brand" label="Check" title="Primary action" onclick={reverse} class="slds-m-left_x-small"></lightning-button>
+        </div>
+
+        output <br>
+        {res}
+    </div>
 </template>
