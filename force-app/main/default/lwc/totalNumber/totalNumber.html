@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="SUM of Numbers"
+    icon-name="action:new">
+    <div class="slds-m-around_medium">
+
+    <lightning-input 
+        type="number"
+       label="Number1" 
+        placeholder="type here..."
+        onchange={num1}>
+    </lightning-input><br>
+    <lightning-input 
+      type="number"
+     label="Number2" 
+      placeholder="type here..."
+      onchange={num2}>
+</lightning-input>
+        
+<lightning-input 
+type="number"
+label="Sum" 
+value={result}
+onchange={sum}
+disabled>
+</lightning-input>
+    </div>
+
+    </lightning-card>
+</template>

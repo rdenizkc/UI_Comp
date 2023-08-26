@@ -1,0 +1,71 @@
+<template>
+<lightning-card 
+    title="Conditional Renderin Button"
+    icon-name="action:new_task">
+<div class="slds-m-around_medium">
+
+ <lightning-button 
+      variant="brand" 
+      label="Show Content" 
+      onclick={handleClick} 
+      class="slds-m-left_x-small">
+ </lightning-button>
+
+ <lightning-button 
+ variant="destructive" 
+ label="Hide" 
+ onclick={hideClick} 
+ class="slds-m-left_x-small">
+</lightning-button>
+
+<lightning-button 
+variant="success" 
+label="Show/Hide" 
+onclick={showhide} 
+class="slds-m-left_x-small">
+</lightning-button>
+
+
+
+<template if:true={showmessage}>
+ <div class="slds-m-top_small">
+    Please click the above <b>Show Content</b> button to see the content below
+ </div>
+</template>
+<hr>
+<div><b><u>This is the Input Type Toggle Example</u></b></div><br>
+<lightning-input 
+type="toggle" 
+label="Toggle to Show/Hide the content" 
+onchange={handleChange}
+>
+</lightning-input>
+
+<hr>
+
+   <template if:true ={showContent}>
+    <div class="slds-m-top_medium">
+        Hello Friends, <br> I am learning Lightning Web Componant at Tech Edu. It looks like it is very interesting topic and it is worth to learn this challange!!
+    </div>
+    <div>
+        You have just cliked on the <b>{labelName}</b> button.
+        <br>
+        <hr>
+
+    Please clik on the <b>Hide</b> button, to hide componant.
+    </div>
+</template>
+
+
+<template if:true={hideContent}>
+
+    <div class="slds-m-top_medium">
+
+        You have just cliked on the <b>Hide</b> button.  
+    </div>
+</template>
+
+
+</div>
+</lightning-card>
+</template>

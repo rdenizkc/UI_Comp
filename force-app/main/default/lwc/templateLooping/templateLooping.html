@@ -1,0 +1,24 @@
+<template>
+    <lightning-card
+    title="Template Looping"
+    icon-name="action:flov">
+    <div class="slds-m-around_medium">
+
+<p>
+   <u>List of Salesforce Certifications</u>
+</p>
+
+
+<template for:each={certifications} for:item="cert">
+
+  <div key={cert}>
+
+<b>{cert}</b>
+
+  </div>
+
+</template>
+    </div>
+</lightning-card>
+    
+</template>
