@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Template Looping - Payment" icon-name="standard:contract_payment">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_small">
+                <b><u>Employee Payment Information</u></b>
+            </p>
+            <template for:each={payments} for:item="payment">
+                <div key={payment.id} class="slds-m-bottom_small">
+                    <b>Type : </b> {payment.type} <br>
+                    <b>Amount : </b> {payment.amount} <br>
+                    <template if:true={payment.paid}>
+                        <b>Paid? : </b> Yes <br>
+                    </template>
+                    <template if:false={payment.paid}>
+                        <b>Paid? : </b> No <br>
+                    </template>
+                    ------------------
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

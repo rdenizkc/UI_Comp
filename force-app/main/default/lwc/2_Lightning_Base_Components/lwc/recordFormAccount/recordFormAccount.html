@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Lightning Record Form - Account" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                object-api-name={objectName}
+                record-id={recordId}
+                fields={fields}
+                mode="view"
+                columns=2
+                onsuccess={showSuccessMessage}
+                onerror={showErrorMessage}
+                onload={showLoadMessage}
+                onsubmit={showSubmitMessage}>
+            </lightning-record-form>
+            
+            <div class="slds-m-top_medium">
+                {testMessage}
+            </div>
+        </div> 
+    </lightning-card>
+</template>
