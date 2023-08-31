@@ -54,7 +54,7 @@ export default class RecordFormAccount extends LightningElement {
             title : 'PAGE IS LOADING!!!',
             message : 'Please wait! The page is being loading....',
             variant : 'warning',
-            mode : 'sticky'
+            mode :'pester'
         });
         this.dispatchEvent(loadToastMsg);
     }

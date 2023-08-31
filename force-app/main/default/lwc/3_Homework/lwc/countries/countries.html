@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Countries" icon-name="standard:location">
+        <div class="slds-m-around_medium">
+
+<template for:each={countries} for:item="count">
+
+<div key={count} class="slds-m-bottom_small">
+
+{count}
+
+
+</div>
+</template>
+        </div>
+    </lightning-card>
+</template>

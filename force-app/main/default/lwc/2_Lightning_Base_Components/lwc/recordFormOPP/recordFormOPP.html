@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Lightning Record edit Form - Opportunty" icon-name="standard:opportunity">
+        <div class="slds-m-around_medium" >
+            <lightning-record-edit-form
+            object-api-name={objectName}
+            record-id={recordId}
+            onsuccess={successHandler}
+            onerror={errorHandler}
+            >
+<lightning-input-field field-name={fields.name}></lightning-input-field>
+<lightning-input-field field-name={fields.stage}></lightning-input-field>
+<lightning-input-field field-name={fields.account}></lightning-input-field>
+<lightning-input-field field-name={fields.amount}></lightning-input-field> 
+<lightning-input-field field-name={fields.closeDate}></lightning-input-field>
+<div class="slds-m-top_medium slds-align_absolute-center">
+<lightning-button
+class="slds-m-right_small"
+label ="Cancel"
+variant="brand-outline"
+type="reset">
+</lightning-button>
+
+
+<lightning-button
+
+label ="Save"
+variant="brand"
+type="submit">
+</lightning-button>
+
+
+</div>
+    
+</lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
