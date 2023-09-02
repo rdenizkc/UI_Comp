@@ -14,14 +14,17 @@ import DEPARTMAN_FIELDS from '@salesforce/schema/Contact.Department';
 export default class RecordViewFormAccount extends LightningElement {
 showContents=false;
     objectName = CONTACT_OBJECT;
-    recordId = '0018d00000jGRmYAAW';
+    recordId = '0038d00000icMf6AAE';
 
    // @api recordId;
     fields = {
         name : NAME_FIELDS,
-    
-    
-
-    }
+        lastName :LASTNAME_FIELDS,
+        accountId : ACCOUNTID_FIELDS,
+        title: TITLE_FIELDS,
+        email:EMAIL_FIELDS,
+        phone:PHONE_FIELDS,
+        departman:DEPARTMAN_FIELDS
+} 
 
 }
