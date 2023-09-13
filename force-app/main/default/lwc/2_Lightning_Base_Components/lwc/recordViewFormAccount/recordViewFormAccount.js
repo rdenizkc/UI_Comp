@@ -22,5 +22,5 @@ showContents=false;
         aRevenue : ANNUAL_REVENUE_FIELD,
         rating : RATING_FIELD
     }
-
+   
 }

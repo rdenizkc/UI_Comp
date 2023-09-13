@@ -18,8 +18,11 @@ export default class GetPicklistValuesAccount extends LightningElement {
         if(data){
             console.log(data);
             const rtIds = data.recordTypeInfos;
+            
             this.vendorRtId = Object.keys(rtIds).find(w=>rtIds[w].name==='Vendor');
             console.log('The Vendor RtID is : '+this.vendorRtId);
+
+
             this.customerRtId = data.defaultRecordTypeId;
             console.log('The Customer RtID is : '+this.customerRtId);
         }

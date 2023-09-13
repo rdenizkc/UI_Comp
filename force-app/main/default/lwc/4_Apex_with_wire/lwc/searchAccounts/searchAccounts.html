@@ -1,0 +1,30 @@
+<template>
+  <lightning-card title="Imperative Apex with Parameters- Search Accounts" icon-name="standard:account">
+    <div class="slds-var-m-around_medium">
+        <lightning-input
+            label="Start Entering search"
+            type="search"
+            value={searchWord}
+            onkeyup={seacrhHandler}>
+        </lightning-input>
+        <div>
+            <b><u>Search Results</u></b>
+        </div>
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="acc">
+                <div key={acc.Id}>
+                    <b>Name: </b> {acc.Name} <br>
+                    <b>Type: </b> {acc.Type} <br>
+                    <b>Industry: </b> {acc.Industry} <br>
+                    <b>Annual Revenue: </b>{acc.AnnualRevenue}<br>
+                    -----------------------------
+                    
+
+                </div>
+            </template>
+        </template>
+
+        
+    </div>
+  </lightning-card>  
+</template>

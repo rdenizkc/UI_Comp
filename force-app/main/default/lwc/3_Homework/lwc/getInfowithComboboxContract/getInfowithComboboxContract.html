@@ -1,7 +1,30 @@
-<template>
-    <lightning-card title="Contarct Record Type -getPicklistValues" icon-name="standard:account">
-        <div class="slds-m-around_medium">
-            {revenelRTId}
-        </div>
-    </lightning-card>
+<template> 
+<lightning-card title="Contract Record Type - getPicklistValues" icon-name="standard:account">
+    <div class="slds-m-around_medium">
+        Revenel record type id is: { renevelRTId}
+    </div>
+    <lightning-combobox
+        label="Renewal Contract Types"
+        value={selectedValue}
+        placeholder="Select Contract Types..."
+        options={options}
+        onchange={handleChange}>
+    </lightning-combobox>
+
+    <div class="slds-m-top_medium">
+        Selected Renewal Contract Type is: <b>{selectedValue}</b>
+    </div>
+    <hr>
+    <lightning-combobox
+        label="Renewal STATUS"
+        value={selectedSTATUS}
+        placeholder="Select STATUS..."
+        options={optionsS}
+        onchange={handleChangeStatus}>
+    </lightning-combobox>
+
+    <div class="slds-m-top_medium">
+        Selected Renewal Status is: <b>{selectedSTATUS}</b>
+    </div>
+</lightning-card>
 </template>

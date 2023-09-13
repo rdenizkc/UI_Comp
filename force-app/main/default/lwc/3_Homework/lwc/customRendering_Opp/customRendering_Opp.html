@@ -1,0 +1,30 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Opportunty Information">
+        <div class="slds-m-around_medium">
+            <lightning-record-view-form
+             
+              object-api-name={objectApiName}
+              record-id={recordId}
+            >
+                <lightning-output-field field-name={fields.opp}></lightning-output-field>
+                <lightning-output-field field-name={fields.account}></lightning-output-field>
+                <lightning-output-field field-name={fields.type}></lightning-output-field>
+                <lightning-output-field field-name={fields.leadSource}></lightning-output-field>
+
+                <template if:true={showtext}>
+                  <lightning-output-field field-name={fields.closeDate}></lightning-output-field>
+                  <lightning-output-field field-name={fields.amount}></lightning-output-field>
+                </template>
+  
+            </lightning-record-view-form>
+            <lightning-input 
+              type="toggle" 
+              label="Additional Information" 
+              onchange={handleChange}
+            >
+            </lightning-input>
+        </div>
+    </lightning-card>
+    
+</template>

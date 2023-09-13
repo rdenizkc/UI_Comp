@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Parent to Child (P2C) Non Primitive Data (APEX Class)" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_medium"> 
+                Hello from Parent Component, Now, I am sending data to my child component using Apex 
+            </p>
+            <div>
+                    <b><u>The most Recent Top 10 Accounts</u></b> <br> <br>
+            </div>
+            <template if:true={accounts.data}>
+                <c-p2c-nonprimitive-child 
+                records={accounts.data}
+                field={columns}>
+
+                </c-p2c-nonprimitive-child>  
+            </template>
+        </div>
+    </lightning-card>
+</template>

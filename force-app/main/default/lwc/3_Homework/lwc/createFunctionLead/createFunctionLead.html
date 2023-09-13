@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="CreateRecord Functions Lead" >
+        <div class="slds-m-around_medium">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input 
+                    type="text" 
+                    label="First Name" 
+                    onkeyup={handleChange}>
+                </lightning-input>
+                <lightning-input 
+                    type="text" 
+                    label="Last Name" 
+                    required="" 
+                    onkeyup={handleChange}>
+                </lightning-input>
+                <lightning-input 
+                    type="text" 
+                    label="Phone" 
+                    onkeyup={handleChange}>
+                </lightning-input>
+                <lightning-input 
+                    type="email" 
+                    label="Email" 
+                    onkeyup={handleChange}>
+                </lightning-input>
+                <lightning-input 
+                    type="text" 
+                    label="Company"
+                    required=""  
+                    onkeyup={handleChange}>
+                </lightning-input>
+            </div> 
+            <div class="slds-m-top_medium slds-align_absolute-center">
+                <lightning-button
+                    label="Cancel"
+                    variant="brand-outline"
+                    onclick={cancelHandler}>
+                </lightning-button>
+                <lightning-button
+                class="slds-m-left_medium"
+                    label="Save"
+                    variant="brand"
+                    onclick={saveHandler}>
+                </lightning-button>
+            </div>
+
+        </div>
+    </lightning-card>
+    
+</template>

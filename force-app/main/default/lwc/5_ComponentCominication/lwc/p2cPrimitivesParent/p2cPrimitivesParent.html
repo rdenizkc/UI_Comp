@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Parent To Child (P2C) Communication - Primitives" icon-name="standard:case">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_medium"> 
+                Hello Friends, You are in the Parent component. As Parent component, I would like to send data to my child and use my child component's features inside of my component.
+            </p>
+            <c-p2c-primitives-child
+                full-name={name}
+                age={ageParent}
+                title={titleParent}
+                experience={experience}>
+            </c-p2c-primitives-child>
+            <hr>
+            <div>
+                This is my second component which I passed the Boolean data to them and they show me the following content.
+                <c-conditional-rendering
+                    show-content={showContentParent}>
+                </c-conditional-rendering>
+            </div> 
+        </div>
+    </lightning-card>
+</template>

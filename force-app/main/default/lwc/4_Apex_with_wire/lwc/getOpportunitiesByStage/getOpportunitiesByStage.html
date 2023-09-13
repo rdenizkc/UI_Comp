@@ -1,0 +1,22 @@
+<!--sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Wired Apex with Parameters - Get Opportunities" icon-name="standard:opportunity">
+        <div class="slds-m-around_medium">
+            <template if:true={opportunities.data}>
+                <lightning-input
+                    label="Type your Stage Name"
+                    value={stageName}
+                    class="slds-m-bottom_small"
+                    onkeyup={changeHandler}>
+                </lightning-input>
+                
+                <lightning-datatable
+                    key-field="id"
+                    data={opportunities.data}
+                    columns={columns}
+                    show-row-number-column>
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>
