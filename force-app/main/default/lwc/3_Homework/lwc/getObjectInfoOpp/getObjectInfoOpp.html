@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="getObjectInfo-Opp" icon-name="action:new_case">
+        <div class="slds-m-around_medium">
+
+<div class="slds-m-around_medium">
+    The Kitchen Appliances Record Type id is : <b>{kRtId}</b><br><br>
+<div class="slds-m-bottom_small">
+    <b>Stage Name Picklist Values for Kitchen Appliances </b>
+</div>
+    
+    <lightning-combobox
+                label="Stage Name"
+                value={selectedValue}
+                placeholder="Select Industry..."
+                options={options}
+                onchange={handleChange} >
+            </lightning-combobox>
+
+</div>
+        </div>
+    </lightning-card>
+</template>

@@ -12,7 +12,3 @@ export default class TrackProperty extends LightningElement {
         this.contact.location = event.target.value;
     }
 }
-
-
-
-

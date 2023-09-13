@@ -20,5 +20,3 @@ this.userName= event.target.value;
         this.value = event.detail.value;
     }
 }
-
-

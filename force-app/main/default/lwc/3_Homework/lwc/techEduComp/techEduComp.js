@@ -7,7 +7,11 @@ export default class TechProEdComp extends LightningElement {
     city ="London"; 
     country = "UK"; 
 
- 
+    id; 
+    setup; 
+    puchline; 
+    type; 
+
 
     valChange(event){
         console.log('valChange method invoked');
@@ -28,7 +32,7 @@ valChange2(event){
 
 valChange3(event){
 this.country=event.target.value;
-
+console.log(this.country.date);
 
 }
     callREST(){

@@ -12,7 +12,7 @@ import RATING_FIELD from '@salesforce/schema/Account.Rating';
 export default class RecordViewFormAccount extends LightningElement {
 showContents=false;
     objectName = ACCOUNT_OBJECT;
-    recordId = '0018d00000jGRmYAAW';
+   recordId = '0018d00000jGRmYAAW';
 
    // @api recordId;
     fields = {

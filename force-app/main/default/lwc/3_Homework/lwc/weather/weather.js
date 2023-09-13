@@ -22,5 +22,3 @@ export default class Weather extends LightningElement {
      }
 
     }
-
-

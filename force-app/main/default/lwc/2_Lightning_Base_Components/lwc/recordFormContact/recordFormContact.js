@@ -15,7 +15,8 @@ export default class RecordFormContact extends LightningElement {
 
     objectName=CONTACT_OBJECT;
     fields=[NAME_FIELDS,LASTNAME_FIELDS,ACCOUNTID_FIELDS,
-        TITLE_FIELDS,EMAIL_FIELDS,PHONE_FIELDS,DEPARTMAN_FIELDS];
+
+    TITLE_FIELDS,EMAIL_FIELDS,PHONE_FIELDS,DEPARTMAN_FIELDS];
 
     recordId="0038d00000icMeyAAE";
 

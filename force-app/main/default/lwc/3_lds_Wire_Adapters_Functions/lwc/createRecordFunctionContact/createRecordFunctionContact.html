@@ -1,0 +1,59 @@
+<template>
+    <lightning-card title="createRecord Function - Contact" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+            <form class="contactForm">
+        <lightning-input
+            label="Fist Name" 
+            name="FirstName"
+            type="text"
+            onkeyup={changeHandler}>
+        </lightning-input>
+        <lightning-input
+            label="Last Name" 
+            name="LastName"
+            type="text"
+            onkeyup={changeHandler}>
+        </lightning-input>
+        <lightning-input
+            label="Title" 
+            name="Title"
+            type="text"
+            onkeyup={changeHandler}>
+        </lightning-input>
+        <lightning-input
+            label="Email" 
+            name="Email"
+            type="text"
+            onkeyup={changeHandler}>
+        </lightning-input>
+        <lightning-input
+            label="Department" 
+            name="Department"
+            type="text"
+            onkeyup={changeHandler}>
+        </lightning-input>
+        </form>
+
+
+            <div class="slds-m-around_medium slds-align_absolute-center">
+                <lightning-button
+                    label="Cancel"
+                    class=""
+                    variant="brand-outline"
+                    onclick={cancelContactHandler}>
+                </lightning-button>
+
+                <lightning-button
+                    label="Save"
+                    variant="brand"
+                    onclick={saveContactHandler}>
+                </lightning-button>
+
+
+
+            </div>
+        
+
+        </div>
+    </lightning-card>
+</template>

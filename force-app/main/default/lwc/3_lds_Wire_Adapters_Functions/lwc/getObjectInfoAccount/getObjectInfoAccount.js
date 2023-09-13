@@ -31,8 +31,6 @@ export default class GetObjectInfoAccount extends LightningElement {
 
             this.masterRtId= Object.keys(recordTypesMap).find(w=>recordTypesMap[w].name==='Master');
 
-
-            
         }
         if(error){
             console.log(error);
